@@ -32,7 +32,7 @@ def encrypt_vigenere(plaintext, key):
                 indexPlaintextCharacter = alphabet.index(plaintextCharacter.lower())
 
                 sum = indexPlaintextCharacter + indexCharacter
-                if sum > 26:
+                if sum >= 26:
                     sum = sum - 26
                 newCharacter = alphabet[sum]
                 newCharacter = newCharacter.upper()
@@ -40,7 +40,7 @@ def encrypt_vigenere(plaintext, key):
                 indexPlaintextCharacter = alphabet.index(plaintextCharacter)
 
                 sum = indexPlaintextCharacter + indexCharacter
-                if sum > 26:
+                if sum >= 26:
                     sum = sum - 26
 
                 newCharacter = alphabet[sum]
